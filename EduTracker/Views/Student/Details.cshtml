@@ -1,0 +1,38 @@
+@model EduTracker.Models.Data.Student
+@{
+    ViewBag.Title = "Student Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3 class="mb-0">Student Details</h3>
+                </div>
+                <div class="card-body">
+                    <dl class="row mb-0">
+                        <dt class="col-sm-5">Full Name:</dt>
+                        <dd class="col-sm-7">@Model.StudentName</dd>
+
+                        <dt class="col-sm-5">Student State:</dt>
+                        <dd class="col-sm-7">@Model.StudentState</dd>
+
+                        <dt class="col-sm-5">ID:</dt>
+                        <dd class="col-sm-7">@Model.StudentId</dd>
+
+                        <dt class="col-sm-5">Total Grade:</dt>
+                        <dd class="col-sm-7">@Model.TotalGrade</dd>
+
+                        <dt class="col-sm-5">Total Grade Percentage:</dt>
+                        <dd class="col-sm-7">@(((Model.TotalGrade / (decimal)420.0) * 100).ToString("F2")) %</dd>
+                    </dl>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/Student/Search" class="btn btn-outline-secondary">Back to Search</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+@{
+    ViewBag.Title = "Student Search";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Search for Student</h2>
+    <form class="row justify-content-center mb-4" method="get" >
+        <div class="col-md-2">
+            <select class="form-select" name="searchType" id="searchType" required>
+                <option value="name">By Name</option>
+                <option value="id">By ID</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="query" id="UserInput" placeholder="Enter student name or ID" required />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary" id="Search-btn">Search</button>
+        </div>
+    </form>
+
+    <ul class="list-group mb-4" id="StudentsContainer">
+        
+        @*<a href="/Student/Details" class="list-group-item list-group-item-action">
+            Student 1 - ID: 12345
+        </a>
+        <a href="/Student/Details" class="list-group-item list-group-item-action">
+            Student 2 - ID: 67890
+        </a>*@
+    
+    </ul>
+
+    <nav aria-label="Search results pages">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled" id="Prev">
+                <a class="page-link" href="#" id="Prev_Btn">Previous</a>
+            </li>
+            <li class="page-item" id="Next">
+                <a class="page-link" href="#" id="Next_Btn">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+</div>
+<script src="~/js/StudentSearch.js"></script>

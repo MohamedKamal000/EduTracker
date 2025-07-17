@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduTracker", "EduTracker\EduTracker.csproj", "{DEDB8D02-1DAC-454B-BF84-EB0D8743A919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelReader", "ExcelReader\ExcelReader.csproj", "{A381D432-C53B-4CD2-9D57-8E11B42C2A7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEDB8D02-1DAC-454B-BF84-EB0D8743A919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDB8D02-1DAC-454B-BF84-EB0D8743A919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDB8D02-1DAC-454B-BF84-EB0D8743A919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDB8D02-1DAC-454B-BF84-EB0D8743A919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A381D432-C53B-4CD2-9D57-8E11B42C2A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A381D432-C53B-4CD2-9D57-8E11B42C2A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A381D432-C53B-4CD2-9D57-8E11B42C2A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A381D432-C53B-4CD2-9D57-8E11B42C2A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
