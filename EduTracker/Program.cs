@@ -14,7 +14,8 @@ DotNetEnv.Env.Load();
 builder.Services.AddDbContext<ApplicationDbContext>
     (o => o.UseMySql(Environment
         .GetEnvironmentVariable("DATABASE_CONNECTIONSTRING"),
-        new MySqlServerVersion(new Version(8,0,42))));
+        new MySqlServerVersion(new Version(8,0,42)))
+        .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
 
 
 builder.Services.AddScoped<StudentHandler>();
